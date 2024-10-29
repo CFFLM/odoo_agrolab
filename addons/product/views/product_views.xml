@@ -44,6 +44,10 @@
                                     <field name="type"/>
                                     <field name="categ_id" string="Product Category"/>
                                 </group>
+                                <group string="Expiration Information">
+                                    <label for="expiration_period" string="Expiration Period (in years)"/>
+                                    <field name="expiration_period" widget="float"/>
+                                </group>
                                 <group name="group_standard_price">
                                     <label for="list_price" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
                                     <div name="pricing">
