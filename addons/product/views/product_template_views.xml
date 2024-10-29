@@ -32,6 +32,7 @@
         <field name="model">product.template</field>
         <field name="mode">primary</field>
         <field name="priority" eval="8" />
+        <field name="list_price" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
         <field name="inherit_id" ref="product.product_template_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//form" position="attributes">
