@@ -40,7 +40,6 @@
             <field name="categ_id" position="after">
                 <field name="default_code" attrs="{'invisible': [('product_variant_count', '>', 1)]}"/>
                 <field name="barcode" invisible="1" attrs="{'invisible': [('product_variant_count', '>', 1)]}"/>
-                <field name="sale_ok"/>
                 <field name="list_price" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
             </field>
 
