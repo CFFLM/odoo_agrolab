@@ -114,12 +114,6 @@
                                 <field name="packaging_ids" nolabel="1" context="{'tree_view_ref':'product.product_packaging_tree_view2', 'form_view_ref':'product.product_packaging_form_view2'}"/>
                             </group>
                         </page>
-                        <page string="Expiration Information" name="expiration_information">
-                            <group>
-                                <label for="expiration_period" string="Periodo di scadenza (in anni)" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
-                                <field name="expiration_period" widget="float" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
-                            </group>
-                        </page>
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">
