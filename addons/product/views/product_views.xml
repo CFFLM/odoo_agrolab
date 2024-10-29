@@ -115,6 +115,8 @@
                             </group>
                         </page>
                     </notebook>
+                    <field name="expiration_period" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
+                    <label for="expiration_period" string="Periodo di scadenza (in anni)" attrs="{'invisible': [('sale_ok', '=', False)]}"/>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>
