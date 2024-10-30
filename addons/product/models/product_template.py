@@ -11,12 +11,6 @@ from odoo.osv import expression
 
 _logger = logging.getLogger(__name__)
 
-class ProductExpiration(models.Model):
-    _inherit = 'product.template'
-
-    expiration_period = fields.Float(
-        string="Periodo di scadenza (anni)",
-        help="Indica il periodo di scadenza in anni")
 
 class ProductTemplate(models.Model):
     _name = "product.template"
@@ -1243,3 +1237,11 @@ class ProductTemplate(models.Model):
             'label': _('Import Template for Products'),
             'template': '/product/static/xls/product_template.xls'
         }]
+
+class ProductExpiration(models.Model):
+    _inherit = 'product.template'
+
+    expiration_period = fields.Float(
+        string="Periodo di scadenza (anni)",
+        help="Indica il periodo di scadenza in anni")
+
