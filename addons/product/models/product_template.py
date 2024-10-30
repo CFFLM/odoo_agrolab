@@ -14,7 +14,7 @@ _logger = logging.getLogger(__name__)
 
 class ProductTemplate(models.Model):
     _name = "product.template"
-    _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin']
+    _inherit = ['product.template', 'mail.thread', 'mail.activity.mixin', 'image.mixin']
     _description = "Product Template"
     _order = "name"
 
@@ -62,7 +62,7 @@ class ProductTemplate(models.Model):
 
     expiration_period = fields.Float(
         string="Periodo di scadenza (anni)",
-        help="Indica il periodo di scadenza in anni per questo prodotto.")
+        help="Indica il periodo di scadenza in anni")
 
     # price fields
     # price: total template price, context dependent (partner, pricelist, quantity)
