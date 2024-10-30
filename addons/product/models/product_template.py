@@ -60,6 +60,10 @@ class ProductTemplate(models.Model):
     cost_currency_id = fields.Many2one(
         'res.currency', 'Cost Currency', compute='_compute_cost_currency_id')
 
+    expiration_period = fields.Float(
+        string="Periodo di scadenza (anni)",
+        help="Indica il periodo di scadenza in anni per questo prodotto.")
+
     # price fields
     # price: total template price, context dependent (partner, pricelist, quantity)
     price = fields.Float(

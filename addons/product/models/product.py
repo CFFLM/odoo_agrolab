@@ -94,12 +94,6 @@ class ProductProduct(models.Model):
     code = fields.Char('Reference', compute='_compute_product_code')
     partner_ref = fields.Char('Customer Ref', compute='_compute_partner_ref')
 
-    expiration_period = fields.Float(
-        string='Expiration Period (in years)',
-        help='Specify the expiration period in years.',
-        default=0.0
-    )
-    
     active = fields.Boolean(
         'Active', default=True,
         help="If unchecked, it will allow you to hide the product without removing it.")
