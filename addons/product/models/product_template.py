@@ -18,6 +18,8 @@ class ProductTemplate(models.Model):
     _description = "Product Template"
     _order = "name"
 
+    expiration_years = fields.Float(string='Expiration (Years)')
+    
     @tools.ormcache()
     def _get_default_category_id(self):
         # Deletion forbidden (at least through unlink)
