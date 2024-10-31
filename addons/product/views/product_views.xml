@@ -541,18 +541,6 @@
             </field>
         </record>
 
-        <record id="view_product_form_inherit_expiration" model="ir.ui.view">
-            <field name="name">product.template.form.inherit.expiration</field>
-            <field name="model">product.template</field>
-            <field name="inherit_id" ref="product.product_template_form_view"/>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='some_other_field']" position="after">
-                    <field name="expiration_years"/>
-                </xpath>
-            </field>
-        </record>
-
-
         <record id="product_packaging_form_view2" model="ir.ui.view">
             <field name="name">product.packaging.form.view2</field>
             <field name="model">product.packaging</field>
