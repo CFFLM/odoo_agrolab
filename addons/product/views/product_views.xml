@@ -43,9 +43,9 @@
                                     <field name="active" invisible="1"/>
                                     <field name="type"/>
                                     <field name="categ_id" string="Product Category"/>
-                                </group>
-                                <group string="Expiration Information">
-                                    <label for="expiration_period" string="Expiration Period (in years)"/>
+                                </group> 
+                                <group string="Informazioni di Scadenza">
+                                    <label for="expiration_period" string="Periodo di scadenza (in anni)"/>
                                     <field name="expiration_period" widget="float"/>
                                 </group>
                                 <group name="group_standard_price">
