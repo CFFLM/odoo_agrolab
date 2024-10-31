@@ -14,7 +14,7 @@ _logger = logging.getLogger(__name__)
 
 class ProductTemplate(models.Model):
     _name = "product.template"
-    _inherit = ['product.template', 'mail.thread', 'mail.activity.mixin', 'image.mixin']
+    _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin']
     _description = "Product Template"
     _order = "name"
 
