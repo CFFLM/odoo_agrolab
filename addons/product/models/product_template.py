@@ -1247,3 +1247,9 @@ class ProductTemplate(models.Model):
             'label': _('Import Template for Products'),
             'template': '/product/static/xls/product_template.xls'
         }]
+
+class ProductTemplate(models.Model):
+    _inherit = 'product.template'
+
+    expiration_period = fields.Float(string='Periodo di scadenza (in anni)')
+
