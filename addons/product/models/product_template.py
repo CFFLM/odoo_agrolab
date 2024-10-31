@@ -11,12 +11,6 @@ from odoo.osv import expression
 
 _logger = logging.getLogger(__name__)
 
-class ProductExpiration(models.Model):
-    _inherit = 'product.template'
-
-    expiration_period = fields.Float(
-        string="Periodo di scadenza (anni)",
-        help="Indica il periodo di scadenza in anni")
 
 class ProductTemplate(models.Model):
     _name = "product.template"
@@ -65,10 +59,6 @@ class ProductTemplate(models.Model):
         'res.currency', 'Currency', compute='_compute_currency_id')
     cost_currency_id = fields.Many2one(
         'res.currency', 'Cost Currency', compute='_compute_cost_currency_id')
-
-    expiration_period = fields.Float(
-        string="Periodo di scadenza (anni)",
-        help="Indica il periodo di scadenza in anni")
 
     # price fields
     # price: total template price, context dependent (partner, pricelist, quantity)
@@ -1248,8 +1238,4 @@ class ProductTemplate(models.Model):
             'template': '/product/static/xls/product_template.xls'
         }]
 
-class ProductTemplate(models.Model):
-    _inherit = 'product.template'
-
-    expiration_period = fields.Float(string='Periodo di scadenza (in anni)')
 
