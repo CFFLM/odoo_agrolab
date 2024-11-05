@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
             <xpath expr="//group[@name='social_media']" position="replace">
                 <group string="Social Media" name="social_media" groups="base.group_no_one">
-                    <field name="social_twitter"/>
+                    <field name="social_twitter" invisible="1"/>
                     <field name="social_facebook"/>
                     <field name="social_github"/>
                     <field name="social_linkedin"/>
