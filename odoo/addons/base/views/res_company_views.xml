@@ -40,7 +40,7 @@
                                     <field name="sequence" invisible="1"/>
                                     <field name="favicon" widget="image" class="float-left oe_avatar" groups="base.group_no_one"/>
                                 </group>
-                                <group name="social_media" invisible="1"/>
+                                <group name="social_media"/>
                             </group>
                         </page>
                     </notebook>
