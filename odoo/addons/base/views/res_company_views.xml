@@ -34,7 +34,7 @@
                                 </group>
                                 <group>
                                     <field name="vat"/>
-                                    <field name="company_registry"/>
+                                    <field name="company_registry" invisible="1"/>
                                     <field name="currency_id" options="{'no_create': True, 'no_open': True}" id="company_currency" context="{'active_test': False}"/>
                                     <field name="parent_id"  groups="base.group_multi_company"/>
                                     <field name="sequence" invisible="1"/>
