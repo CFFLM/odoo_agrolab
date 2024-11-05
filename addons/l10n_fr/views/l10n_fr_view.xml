@@ -6,15 +6,12 @@
             <field name="priority">20</field>
             <field name="inherit_id" ref="base.view_company_form"/>
             <field name="arch" type="xml">
-                <data>
-                    <xpath expr="//field[@name='company_registry']" position="attributes">
-                        <attribute name="invisible">1</attribute>
-                    </xpath>
-                    <xpath expr="//field[@name='company_registry']" position="after">
-                        <field name="siret" attrs="{'invisible': [('country_code', '!=', 'FR')]}"/>
-                        <field name="ape" attrs="{'invisible': [('country_code', '!=', 'FR')]}"/>
-                    </xpath>
-                </data>
+            <data>
+                 <xpath expr="//field[@name='company_registry']" position="after">
+                    <field name="siret" attrs="{'invisible': [('country_code', '!=', 'FR')]}"/>
+                    <field name="ape" attrs="{'invisible': [('country_code', '!=', 'FR')]}"/>
+                 </xpath>
+            </data>
             </field>
         </record>
 
