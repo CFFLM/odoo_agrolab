@@ -205,7 +205,7 @@
                             <field name="function" placeholder="e.g. Sales Director"
                                 attrs="{'invisible': [('is_company','=', True)]}"/>
                             <field name="phone" widget="phone"/>
-                            <field name="mobile" widget="phone"/>
+                            <field name="mobile" invisible="1" widget="phone"/>
                             <field name="user_ids" invisible="1"/>
                             <field name="email" widget="email" context="{'gravatar_image': True}" attrs="{'required': [('user_ids','!=', [])]}"/>
                             <field name="website" widget="url" placeholder="e.g. https://www.odoo.com"/>
@@ -247,7 +247,7 @@
                                     <field name="zip"/>
                                     <field name="city"/>
                                     <field name="country_id"/>
-                                    <field name="mobile"/>
+                                    <field name="mobile" invisible="1"/>
                                     <field name="state_id"/>
                                     <field name="image_128"/>
                                     <field name="lang"/>
@@ -319,7 +319,7 @@
                                             <group colspan="5">
                                                 <field name="email" widget="email"/>
                                                 <field name="phone" widget="phone"/>
-                                                <field name="mobile" widget="phone"/>
+                                                <field name="mobile" invisible="1" widget="phone"/>
                                                 <field name="company_id" invisible="1"/>
                                             </group>
                                             <group colspan="1">
