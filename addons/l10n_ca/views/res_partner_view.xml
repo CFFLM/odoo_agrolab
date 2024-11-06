@@ -9,6 +9,9 @@
                 <xpath expr="//field[@name='vat']" position="after">
                     <field name="l10n_ca_pst"/>
                 </xpath>
+                <xpath expr="//field[@name='mobile']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
             </field>
         </record>
     </data>
