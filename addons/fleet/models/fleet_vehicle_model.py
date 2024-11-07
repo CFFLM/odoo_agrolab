@@ -16,7 +16,7 @@ class FleetVehicleModel(models.Model):
                                  domain=lambda self: [('groups_id', 'in', self.env.ref('fleet.fleet_group_manager').id)])
     image_128 = fields.Image(related='brand_id.image_128', readonly=True)
     active = fields.Boolean(default=True)
-    vehicle_type = fields.Selection([('car', 'Car'), ('bike', 'Bike')], default='car', required=True)
+    vehicle_type = fields.Selection([('car', 'Car'), ('bike', 'Bike'), ('truck', 'Camion')], default='car', required=True)
 
     @api.depends('name', 'brand_id')
     def name_get(self):
