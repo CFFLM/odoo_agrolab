@@ -181,7 +181,7 @@
                                         <field name="job_id"/>
                                     </group>
                                     <group string="Attendance" name="identification_group">
-                                        <field name="pin" string="PIN Code"/>
+                                        <field name="pin" string="PIN Code" invisible="1" modifiers="{'invisible': True}"/>
                                         <label for="barcode"/>
                                         <div class="o_row">
                                             <field name="barcode"/>
