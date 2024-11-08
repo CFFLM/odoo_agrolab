@@ -137,7 +137,7 @@
                                         <label for="km_home_work" invisible="1"/>
                                         <div class="o_row" name="div_km_home_work">
                                             <field name="km_home_work" invisible="1" groups="hr.group_hr_user"/>
-                                            <span>Km</span>
+                                           <!-- <span>Km</span -->
                                         </div>
 
                                     </group>
