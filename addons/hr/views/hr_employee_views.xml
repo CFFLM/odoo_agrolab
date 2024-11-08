@@ -124,7 +124,7 @@
                             </page>
                             <page name="personal_information" string="Private Information" groups="hr.group_hr_user">
                                 <group>
-                                    <group >
+                                    <group>
                                         <field name="address_home_id" invisible="1"
                                             context="{
                                                 'show_address': 1,
