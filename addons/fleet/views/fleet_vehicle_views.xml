@@ -63,9 +63,9 @@
                             <field name="active" invisible="1"/>
                             <field name="vehicle_type" invisible="1"/>
                             <field name="driver_id" domain="['|', ('company_id', '=', False ), ('company_id', '=', company_id)]"/>
-                            <label for="future_driver_id"/>
+                            <label for="future_driver_id" invisible="1"/>
                             <div class="o_row">
-                                <field name="future_driver_id"/>
+                                <field name="future_driver_id" invisible="1"/>
                                 <button string="Apply Change"
                                     class="btn btn-primary"
                                     type="object"
@@ -113,8 +113,8 @@
                                 <field name="power"/><span>kW</span>
                             </div>
                         </group>
-                        <group string="Description">
-                            <field name="description" nolabel="1" placeholder="Write here any other information related to this vehicle" />
+                        <group string="Description" invisible="1">
+                            <field name="description" invisible="1" nolabel="1" placeholder="Write here any other information related to this vehicle" invisible="1"/>
                         </group>
                     </group>
                 </sheet>

@@ -18,7 +18,7 @@
         <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='driver_id']" position="after">
-                <field name="mobility_card" readonly="1"/>
+                <field name="mobility_card" invisible="1" readonly="1"/>
             </xpath>
         </field>
     </record>
