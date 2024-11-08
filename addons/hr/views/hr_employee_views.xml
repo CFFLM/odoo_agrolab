@@ -124,23 +124,7 @@
                             </page>
                             <page name="personal_information" string="Private Information" groups="hr.group_hr_user">
                                 <group>
-                                    <group>
-                                        <field name="address_home_id" invisible="1"
-                                            context="{
-                                                'show_address': 1,
-                                                'default_type': 'private',
-                                                'form_view_ref': 'base.res_partner_view_form_private'}"
-                                            options='{"always_reload": True, "highlight_first_line": True}'/>
-                                        <field name="private_email" string="Email" invisible="1"/>
-                                        <field name="phone" invisible="1" class="o_force_ltr" groups="hr.group_hr_user" string="Phone" readonly="True"/>
-                                        <field name="bank_account_id" context="{'default_partner_id': address_home_id}"/>
-                                        <label for="km_home_work" invisible="1"/>
-                                        <div class="o_row" invisible="1" name="div_km_home_work">
-                                            <field name="km_home_work" invisible="1" groups="hr.group_hr_user"/>
-                                           <!-- <span>Km</span -->
-                                        </div>
-
-                                    </group>
+                                    
                                     <group string="Citizenship">
                                         <field name="country_id" options='{"no_open": True, "no_create": True}'/>
                                         <field name="identification_id" groups="hr.group_hr_user"/>
@@ -171,6 +155,23 @@
                                         <field name="certificate"/>
                                         <field name="study_field" invisible="1"/>
                                         <field name="study_school" invisible="1"/>
+                                    </group>
+                                    <group>
+                                        <field name="address_home_id" invisible="1"
+                                            context="{
+                                                'show_address': 1,
+                                                'default_type': 'private',
+                                                'form_view_ref': 'base.res_partner_view_form_private'}"
+                                            options='{"always_reload": True, "highlight_first_line": True}'/>
+                                        <field name="private_email" string="Email" invisible="1"/>
+                                        <field name="phone" invisible="1" class="o_force_ltr" groups="hr.group_hr_user" string="Phone" readonly="True"/>
+                                        <field name="bank_account_id" context="{'default_partner_id': address_home_id}"/>
+                                        <label for="km_home_work" invisible="1"/>
+                                        <div class="o_row" invisible="1" name="div_km_home_work">
+                                            <field name="km_home_work" invisible="1" groups="hr.group_hr_user"/>
+                                           <!-- <span>Km</span -->
+                                        </div>
+
                                     </group>
                                 </group>
                             </page>
