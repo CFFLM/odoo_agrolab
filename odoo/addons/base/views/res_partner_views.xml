@@ -247,7 +247,7 @@
                                     <field name="zip"/>
                                     <field name="city"/>
                                     <field name="country_id"/>
-                                    <field name="mobile"/>
+                                    <field name="mobile" invisible="1" modifiers="{'invisible': True}"/>
                                     <field name="state_id"/>
                                     <field name="image_128"/>
                                     <field name="lang"/>
