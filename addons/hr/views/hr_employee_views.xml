@@ -124,19 +124,19 @@
                             </page>
                             <page name="personal_information" string="Private Information" groups="hr.group_hr_user">
                                 <group>
-                                    <group string="Private Contact">
-                                        <field name="address_home_id"
+                                    <group >
+                                        <field name="address_home_id" invisible="1"
                                             context="{
                                                 'show_address': 1,
                                                 'default_type': 'private',
                                                 'form_view_ref': 'base.res_partner_view_form_private'}"
                                             options='{"always_reload": True, "highlight_first_line": True}'/>
-                                        <field name="private_email" string="Email"/>
-                                        <field name="phone" class="o_force_ltr" groups="hr.group_hr_user" string="Phone" readonly="True"/>
+                                        <field name="private_email" string="Email" invisible="1"/>
+                                        <field name="phone" invisible="1" class="o_force_ltr" groups="hr.group_hr_user" string="Phone" readonly="True"/>
                                         <field name="bank_account_id" context="{'default_partner_id': address_home_id}"/>
-                                        <label for="km_home_work"/>
+                                        <label for="km_home_work" invisible="1"/>
                                         <div class="o_row" name="div_km_home_work">
-                                            <field name="km_home_work" groups="hr.group_hr_user"/>
+                                            <field name="km_home_work" invisible="1" groups="hr.group_hr_user"/>
                                             <span>Km</span>
                                         </div>
 
