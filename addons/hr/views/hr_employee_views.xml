@@ -124,7 +124,7 @@
                             </page>
                             <page name="personal_information" string="Private Information" groups="hr.group_hr_user">
                                 <group>
-                                  <!--> <group >
+                                    <group >
                                         <field name="address_home_id" invisible="1"
                                             context="{
                                                 'show_address': 1,
@@ -137,10 +137,10 @@
                                         <label for="km_home_work" invisible="1"/>
                                         <div class="o_row" name="div_km_home_work">
                                             <field name="km_home_work" invisible="1" groups="hr.group_hr_user"/>
-                                            <span>Km</span>
+                                           <!-- <span>Km</span -->
                                         </div>
 
-                                    </group> -->
+                                    </group>
                                     <group string="Citizenship">
                                         <field name="country_id" options='{"no_open": True, "no_create": True}'/>
                                         <field name="identification_id" groups="hr.group_hr_user"/>
