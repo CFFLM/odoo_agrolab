@@ -190,7 +190,7 @@
                                         <span>/ month</span>
                                     </div>
                                 </group>
-                                <group string="Yearly Advantages" name="yearly_advantages"/>
+                                <group string="Yearly Advantages" name="yearly_advantages" invisible="1"/>
                             </group>
                         </page>
                     </notebook>
