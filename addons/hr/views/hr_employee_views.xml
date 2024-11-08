@@ -158,9 +158,9 @@
                                     <group string="Dependant">
                                         <field name="children"/>
                                     </group>
-                                    <group string="Emergency">
-                                        <field name="emergency_contact"/>
-                                        <field name="emergency_phone" class="o_force_ltr"/>
+                                    <group string="Emergency" invisible="1">
+                                        <field name="emergency_contact" invisible="1"/>
+                                        <field name="emergency_phone" class="o_force_ltr" invisible="1"/>
                                     </group>
                                     <group string="Work Permit" name="work_permit">
                                         <field name="visa_no"/>
