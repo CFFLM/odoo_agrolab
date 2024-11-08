@@ -107,7 +107,7 @@
                                                 options='{"always_reload": True, "highlight_first_line": True}'/>
                                             <field name="work_location"/>
                                         </group>
-                                        <group name="managers" string="Approvers" class="hide-group-if-empty">
+                                        <group name="managers" class="hide-group-if-empty">
                                             <!-- is overridden in other hr related modules -->
                                         </group>
                                         <group name="departure" string="Departure" attrs="{'invisible': [('active', '=', True)]}">
