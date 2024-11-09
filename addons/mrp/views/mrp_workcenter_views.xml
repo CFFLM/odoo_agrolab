@@ -320,7 +320,7 @@
                                 <field name="active" invisible="1"/>
                                 <field name="name" string="Work Center Name" required="True"/>
                                 <field
-                                    name="alternative_workcenter_ids"
+                                    name="alternative_workcenter_ids" invisible="1"
                                     widget="many2many_tags"
                                     context="{'default_company_id': company_id}"
                                 />
