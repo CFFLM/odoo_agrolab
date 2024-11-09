@@ -352,11 +352,11 @@
                                     <group>
                                         <label for="time_start" invisible="1"/>
                                         <div>
-                                            <field name="time_start" invisible="1" widget="float_time" class="oe_inline"/> minutes
+                                            <field name="time_start" invisible="1" widget="float_time" /> <!--minutes-->
                                         </div>
                                         <label for="time_stop" invisible="1"/>
                                         <div>
-                                            <field name="time_stop" invisible="1" widget="float_time" class="oe_inline"/> minutes
+                                            <field name="time_stop" invisible="1" widget="float_time" class="oe_inline"/> <!--minutes-->
                                         </div>
                                     </group>
                                 </group>
