@@ -114,7 +114,7 @@
                             </div>
                         </group>
                         <group string="Description" invisible="1">
-                            <field name="description" invisible="1"  modifiers="{'invisible': True}nolabel="1" placeholder="Write here any other information related to this vehicle"/>
+                            <field name="description" invisible="1"  modifiers="{'invisible': True}" nolabel="1" placeholder="Write here any other information related to this vehicle"/>
                         </group>
                     </group>
                 </sheet>
