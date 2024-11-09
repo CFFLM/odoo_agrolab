@@ -339,7 +339,7 @@
                                         <div class="o_row">
                                             <field name="time_efficiency"/> %
                                         </div>
-                                        <field name="capacity"/> kg 
+                                        <field name="capacity"/> Kg
 
                                         <label for="oee_target"/>
                                         <div class="o_row">
@@ -347,7 +347,7 @@
                                         </div>
                                     </group>
                                     <group string="Costing Information" name="costing">
-                                        <field name="costs_hour"/> euro
+                                        <field name="costs_hour"/> €
                                     </group>
                                     <group>
                                         <label for="time_start" invisible="1"/>
