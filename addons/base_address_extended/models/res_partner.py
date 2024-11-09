@@ -10,16 +10,6 @@ from odoo.exceptions import UserError
 class Partner(models.Model):
     _inherit = ['res.partner']
 
-    @api.model
-    def fields_view_get(self, view_id=None, view_type='form', toolbar=False, submenu=False):
-        res = super(Partner, self).fields_view_get(view_id=view_id, view_type=view_type, toolbar=toolbar, submenu=submenu)
-        if view_type == 'form' and view_id == self.env.ref('base.view_partner_form').id:
-            doc = etree.XML(res['arch'])
-            for node in doc.xpath("//field[@name='category_id']"):
-                node.set('modifiers', '{"invisible": true}')
-            res['arch'] = etree.tostring(doc, encoding='unicode')
-        return res
-
     street_name = fields.Char(
         'Street Name', compute='_compute_street_data', inverse='_inverse_street_data', store=True)
     street_number = fields.Char(
